@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Ad Grow Solutions - Google Ads, Meta Ads, TikTok Ads and YouTube Ads services.">
+
+<title>Ad Grow Solutions | Digital Advertising Agency</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#070b17;
+    color:white;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(7,11,23,.9);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #20263b;
+}
+
+.navbar{
+    height:72px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#20d6c7;
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+}
+
+.nav-links a{
+    color:#cbd2e5;
+    font-size:14px;
+}
+
+.nav-links a:hover{
+    color:#20d6c7;
+}
+
+/* HERO */
+
+.hero{
+    padding:110px 0 90px;
+    background:
+    radial-gradient(circle at 80% 20%,rgba(109,93,252,.25),transparent 35%);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:60px;
+    align-items:center;
+}
+
+.badge{
+    color:#20d6c7;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+}
+
+h1{
+    font-size:clamp(45px,6vw,75px);
+    line-height:1.05;
+    margin:20px 0;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#fff,#20d6c7,#816dff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    color:#aab3ca;
+    font-size:18px;
+    max-width:650px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 21px;
+    border-radius:12px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.primary{
+    background:linear-gradient(135deg,#6d5dfc,#8a5cff);
+}
+
+.secondary{
+    border:1px solid #30374c;
+    background:#11172a;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    background:#0d1325;
+    border:1px solid #252c42;
+    padding:25px;
+    border-radius:22px;
+    box-shadow:0 30px 70px rgba(0,0,0,.35);
+}
+
+.chart{
+    height:190px;
+    margin-top:25px;
+    display:flex;
+    align-items:end;
+    gap:10px;
+    padding:15px;
+    background:#090e1d;
+    border-radius:14px;
+}
+
+.bar{
+    flex:1;
+    background:linear-gradient(#20d6c7,#6d5dfc);
+    border-radius:6px 6px 2px 2px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:12px;
+}
+
+.stat{
+    padding:15px;
+    background:#151c30;
+    border-radius:12px;
+}
+
+.stat b{
+    display:block;
+    font-size:20px;
+}
+
+.stat small{
+    color:#929bb1;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 45px;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#aab3ca;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:17px;
+}
+
+.card{
+    background:#10172b;
+    border:1px solid #252c42;
+    border-radius:18px;
+    padding:27px;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#20d6c7;
+}
+
+.icon{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#aab3ca;
+    font-size:14px;
+}
+
+/* WHY US */
+
+.two-column{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.two-column h2{
+    font-size:43px;
+    line-height:1.15;
+}
+
+.two-column > div > p{
+    color:#aab3ca;
+    margin-top:15px;
+}
+
+.features{
+    margin-top:25px;
+    display:grid;
+    gap:17px;
+}
+
+.feature{
+    display:flex;
+    gap:12px;
+}
+
+.tick{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:#122d2d;
+    color:#20d6c7;
+    display:grid;
+    place-items:center;
+    flex:none;
+}
+
+.feature p{
+    color:#aab3ca;
+    font-size:14px;
+}
+
+/* PROCESS */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.step{
+    background:#10172b;
+    border:1px solid #252c42;
+    padding:28px;
+    border-radius:18px;
+}
+
+.number{
+    color:#20d6c7;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.step h3{
+    margin:10px 0;
+}
+
+.step p{
+    color:#aab3ca;
+}
+
+/* CTA */
+
+.cta{
+    background:linear-gradient(120deg,rgba(109,93,252,.25),rgba(32,214,199,.1));
+    border:1px solid #30374c;
+    border-radius:25px;
+    padding:50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.cta p{
+    color:#aab3ca;
+    margin-top:8px;
+}
+
+/* CONTACT */
+
+.contact{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:25px;
+}
+
+.contact-box,
+.form-box{
+    background:#10172b;
+    border:1px solid #252c42;
+    border-radius:20px;
+    padding:30px;
+}
+
+.contact-item{
+    padding:18px 0;
+    border-bottom:1px solid #252c42;
+}
+
+.contact-item span{
+    display:block;
+    color:#8f98ad;
+    font-size:12px;
+}
+
+.contact-item a{
+    font-weight:bold;
+}
+
+form{
+    display:grid;
+    gap:15px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+label{
+    color:#cbd2e5;
+    font-size:13px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    margin-top:7px;
+    padding:14px;
+    border-radius:10px;
+    border:1px solid #30374c;
+    background:#080d1c;
+    color:white;
+    outline:none;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#20d6c7;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid #20263b;
+    padding:30px 0;
+    color:#8f98ad;
+    font-size:13px;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    display:grid;
+    place-items:center;
+    font-size:27px;
+    z-index:100;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero-grid,
+    .two-column,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .services{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process{
+        grid-template-columns:1fr;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        padding:75px 0;
+    }
+}
+
+@media(max-width:550px){
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .row{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:45px;
+    }
+
+    .section-title h2,
+    .two-column h2{
+        font-size:33px;
+    }
+
+    .cta{
+        padding:30px;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div class="container navbar">
+
+<a href="#home" class="logo">
+Ad Grow <span>Solutions</span>
+</a>
+
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#process">Process</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+Performance Marketing Agency
+</div>
+
+<h1>
+Turn <span class="gradient">Ad Spend</span>
+Into Business Growth.
+</h1>
+
+<p>
+Ad Grow Solutions helps businesses reach the right customers through strategic Google Ads, Meta Ads, TikTok Ads and YouTube advertising.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/923014704711"
+target="_blank">
+Get Started →
+</a>
+
+<a class="btn secondary"
+href="#services">
+Explore Services
+</a>
+
+</div>
+
+</div>
+
+
+<div class="dashboard">
+
+<h3>Campaign Overview</h3>
+
+<div class="chart">
+
+<div class="bar" style="height:35%"></div>
+<div class="bar" style="height:48%"></div>
+<div class="bar" style="height:43%"></div>
+<div class="bar" style="height:63%"></div>
+<div class="bar" style="height:58%"></div>
+<div class="bar" style="height:77%"></div>
+<div class="bar" style="height:91%"></div>
+<div class="bar" style="height:82%"></div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<b>Reach</b>
+<small>Targeted audience</small>
+</div>
+
+<div class="stat">
+<b>Leads</b>
+<small>Conversion focused</small>
+</div>
+
+<div class="stat">
+<b>Growth</b>
+<small>Data driven</small>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Advertising That Gets Attention</h2>
+
+<p>
+Reach your customers on the platforms they use every day.
+</p>
+
+</div>
+
+
+<div class="services">
+
+<div class="card">
+
+<div class="icon">🔎</div>
+
+<h3>Google Ads</h3>
+
+<p>
+Reach people actively searching for your products and services with targeted Google advertising campaigns.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📣</div>
+
+<h3>Meta Ads</h3>
+
+<p>
+Grow your business through Facebook and Instagram campaigns with targeted audiences and creative testing.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎵</div>
+
+<h3>TikTok Ads</h3>
+
+<p>
+Create attention-grabbing campaigns designed for TikTok audiences and customer acquisition.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">▶️</div>
+
+<h3>YouTube Ads</h3>
+
+<p>
+Reach relevant audiences with engaging video advertising across YouTube.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section id="why">
+
+<div class="container two-column">
+
+<div>
+
+<div class="badge">
+Why Ad Grow Solutions
+</div>
+
+<h2>
+A Growth Partner,
+Not Just An Ad Manager.
+</h2>
+
+<p>
+We focus on clear goals, strong creative, relevant audiences and continuous campaign improvement.
+</p>
+
+
+<div class="features">
+
+<div class="feature">
+
+<div class="tick">✓</div>
+
+<div>
+<b>Goal-Focused Strategy</b>
+<p>
+Campaigns built around your business objectives.
+</p>
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<div class="tick">✓</div>
+
+<div>
+<b>Multi-Platform Advertising</b>
+<p>
+Google, Meta, TikTok and YouTube under one strategy.
+</p>
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<div class="tick">✓</div>
+
+<div>
+<b>Continuous Optimization</b>
+<p>
+Improve campaign direction using performance data.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="dashboard">
+
+<h3>Our Growth Framework</h3>
+
+<br>
+
+<div class="step">
+
+<div class="number">01 / REACH</div>
+
+<h3>Find Your Audience</h3>
+
+<p>
+Identify the people most relevant to your offer.
+</p>
+
+</div>
+
+<br>
+
+<div class="step">
+
+<div class="number">02 / ENGAGE</div>
+
+<h3>Make The Message Work</h3>
+
+<p>
+Test creative ideas and offers that communicate clearly.
+</p>
+
+</div>
+
+<br>
+
+<div class="step">
+
+<div class="number">03 / CONVERT</div>
+
+<h3>Drive Action</h3>
+
+<p>
+Build campaigns around meaningful customer actions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="process">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Simple Process. Clear Direction.</h2>
+
+<p>
+A straightforward approach from planning to optimization.
+</p>
+
+</div>
+
+
+<div class="process">
+
+<div class="step">
+
+<div class="number">STEP 01</div>
+
+<h3>Discover</h3>
+
+<p>
+Understand your business, audience, offer and advertising goals.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">STEP 02</div>
+
+<h3>Launch</h3>
+
+<p>
+Build campaign structure, targeting and creative for the selected platforms.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">STEP 03</div>
+
+<h3>Optimize</h3>
+
+<p>
+Review campaign performance and continuously improve the strategy.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<div>
+
+<div class="badge">
+Ready To Grow?
+</div>
+
+<h2>Let's Build Your Next Campaign.</h2>
+
+<p>
+Tell us what you want to achieve and let's discuss the right advertising approach.
+</p>
+
+</div>
+
+
+<a class="btn primary"
+href="https://wa.me/923014704711"
+target="_blank">
+
+Talk On WhatsApp →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Let's Talk About Your Growth</h2>
+
+<p>
+Send an inquiry or contact us directly.
+</p>
+
+</div>
+
+
+<div class="contact">
+
+
+<div class="contact-box">
+
+<h3>Contact Ad Grow Solutions</h3>
+
+
+<div class="contact-item">
+
+<span>Phone / WhatsApp</span>
+
+<a href="tel:+923014704711">
++92 301 4704711
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<span>WhatsApp</span>
+
+<a href="https://wa.me/923014704711" target="_blank">
+Start A Conversation →
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<span>Advertising Services</span>
+
+<strong>
+Google • Meta • TikTok • YouTube
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="form-box">
+
+<form onsubmit="sendWhatsApp(event)">
+
+<div class="row">
+
+<label>
+Name
+
+<input
+id="name"
+required
+placeholder="Your name">
+</label>
+
+
+<label>
+Business
+
+<input
+id="business"
+placeholder="Business name">
+</label>
+
+</div>
+
+
+<div class="row">
+
+<label>
+Service
+
+<select id="service">
+
+<option>Google Ads</option>
+<option>Meta Ads</option>
+<option>TikTok Ads</option>
+<option>YouTube Ads</option>
+<option>Multiple Platforms</option>
+
+</select>
+
+</label>
+
+
+<label>
+Phone
+
+<input
+id="phone"
+placeholder="+92...">
+
+</label>
+
+</div>
+
+
+<label>
+
+Your Goal
+
+<textarea
+id="message"
+required
+placeholder="Tell us what you want your ads to achieve..."></textarea>
+
+</label>
+
+
+<button
+class="btn primary"
+type="submit">
+
+Send Inquiry On WhatsApp →
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div>
+© <span id="year"></span> Ad Grow Solutions. All rights reserved.
+</div>
+
+<div>
+Google • Meta • TikTok • YouTube Ads
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP BUTTON -->
+
+<a
+class="whatsapp"
+href="https://wa.me/923014704711"
+target="_blank"
+aria-label="WhatsApp">
+
+☏
+
+</a>
+
+
+<script>
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+function sendWhatsApp(event){
+
+event.preventDefault();
+
+const name =
+document.getElementById("name").value;
+
+const business =
+document.getElementById("business").value;
+
+const service =
+document.getElementById("service").value;
+
+const phone =
+document.getElementById("phone").value;
+
+const message =
+document.getElementById("message").value;
+
+
+const text =
+`Hi Ad Grow Solutions,
+
+Name: ${name}
+Business: ${business}
+Service: ${service}
+Phone: ${phone}
+
+Goal:
+${message}`;
+
+
+window.open(
+"https://wa.me/923014704711?text="
++ encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
